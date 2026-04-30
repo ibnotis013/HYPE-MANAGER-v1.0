@@ -3,23 +3,23 @@ package edu.ledo.Ejercicio;
 public abstract class Product {
 
 
-    private String id;
+    private int id;
     private String modelName;
     private int basePrice;
     private Brand brand;
 
-    public Product(String id, String modelName, int basePrice, Brand brand) {
+    public Product(int id, String modelName, int basePrice, Brand brand) {
         this.id = id;
         this.modelName = modelName;
         this.basePrice = basePrice;
         this.brand = brand;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

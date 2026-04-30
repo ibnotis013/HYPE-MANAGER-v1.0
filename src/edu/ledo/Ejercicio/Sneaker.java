@@ -10,7 +10,7 @@ public class Sneaker extends Product{
     private String colorWay;
     private Map<String,Integer> sizesStock=new HashMap<>();
 
-    public Sneaker(String id, String modelName, int basePrice, Brand brand, boolean isLimitedEdition, String colorWay, Map<String, Integer> sizesStock) {
+    public Sneaker(int id, String modelName, int basePrice, Brand brand, boolean isLimitedEdition, String colorWay, Map<String, Integer> sizesStock) {
         super(id, modelName, basePrice, brand);
         this.isLimitedEdition = isLimitedEdition;
         this.colorWay = colorWay;
@@ -37,6 +37,10 @@ public class Sneaker extends Product{
     @Override
     public String toString() {
         return "Sneaker{" +
+                "id='" + getId() + '\'' +
+                ", modelName='" + getModelName() + '\'' +
+                ", basePrice=" + getBasePrice() +
+                ", brand=" + getBrand() +
                 "isLimitedEdition=" + isLimitedEdition +
                 ", colorWay='" + colorWay + '\'' +
                 '}';
